@@ -1,0 +1,42 @@
+{
+    "name":"bOt_Head",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "description":"super extension for multipurpose use",
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "icons": {
+      "16": "icons/logo_16x16.png",
+      "48": "icons/logo_48x48.png",
+      "128": "icons/logo_128x128.png"
+  },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "run_at":"document_idle",
+            "js":["run.js"]
+        }
+    ],
+    "background":{
+        "service_worker":"background.js"
+      },
+      "permissions":[
+        "scripting",
+        "tabs",
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "alarms",
+        "notifications",
+        "storage",
+        "contextMenus",
+        "clipboardRead",
+        "clipboardWrite",
+        "downloads"
+      ],
+      "omnibox":{
+        "keyword":"stuart"
+      }
+}

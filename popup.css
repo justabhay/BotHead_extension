@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(55, 76, 74);
+    /* border: 2px solid mediumaquamarine;
+    border-radius: 10px; */
+    color:mediumaquamarine;
+}
+.container{
+    min-width:200px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box{
+    border: 2px solid mediumaquamarine;
+    border-radius: 10px;
+    margin: 5px;
+    margin-top: 7px;
+    padding: 5px;
+}
+#logo{
+    margin: 5px;
+    padding: 5px;
+}
+button{
+    border-radius: 10px;
+    border-color:mediumaquamarine ;
+    background-color: mediumaquamarine;
+}
+button:hover{
+    background-color: rgb(86, 158, 134);
+}
+#emailList{
+    background-color: aliceblue;
+    border-radius: 6px;
+    max-height: 150px;
+    overflow-y: scroll;
+    
+}
+ul li{
+    padding: 2px;
+}
+br{
+    background-color:mediumaquamarine
+}
+
+

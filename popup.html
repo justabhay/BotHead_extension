@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- email scrapper -->
+        <h3 id="logo" >Super Extension</h3>
+        <div id="emailExt" class="box">
+            Extract Emails 
+            <button id="scrapEmails">Extract</button><br>
+            <button id="btnCopy" >Copy</button> 
+            <ul id="emailList">
+                    
+            </ul>
+        </div>
+
+        <!-- Youtube Recommendations -->
+        <div id="yt" class="box">
+            Custom YouTube <hr>
+            Recommendations
+            <button id="btnRecomend">TURN OFF</button><br>
+             Comments <br>
+            <button id="btnComment">TURN OFF</button>
+        </div>
+
+        <!-- Stay Hydrate -->
+        <div class="box" id="sHydrate">
+            Take A Break <hr>
+                  <p>
+                    Will Remind you Every 20 mins<br>to take a Break.
+                  </p>
+            <!-- <input type="number" placeholder="interval in minutes" id="num"> -->
+            <button id="add">Remind me!!!</button>
+        </div>
+
+        <!-- Theme Inversion -->
+        <div id="theme" class="box">
+            Light/Dark
+            <button id="btnInvertTheme">INVERT LIGHT</button>
+        </div>
+
+        <!-- font size changer
+        <div class="box" id="fntBtn">
+            Font Size 
+            <button id="increase">+</button>
+            <button id="decrease">-</button>
+        </div> -->
+        
+
+    </div>
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
